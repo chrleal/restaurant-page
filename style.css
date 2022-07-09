@@ -1,9 +1,11 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body{
+    background-color: #435244;
 }
 
 #content {
@@ -13,18 +15,91 @@
 
 header {
     display: flex;
+    background-color: #435244;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+}
+
+.headerLeft{
+    flex: 1.5;
+}
+
+.headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-left: 1px solid black;
 }
 
 button {
-    background-color: green;
-    font-size: 50px;
-    border: 1px solid black;
+    flex: 1;
+    background-color:transparent;
+    border: none;
+    font-size: 26px;
     cursor:pointer;
+    color: #fffff2;
+    max-width: 381px;
+    padding: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 button:hover {
-    background-color:rgb(0, 97, 0);
+    background-color:#29312a;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fffff2;
+    background-color: #435244;
+}
+
+.mainLeft {
+    height: calc(100vh - 42px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1.5;
+    background-color:#435244;
+    border-right: 1px solid black;
+    border-top: none;
+    font-size: 50px;
+    padding-bottom: 41px;
+}
+
+.mainRight {
+    height: calc(100vh - 42px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #435244;
+    padding-bottom: 41px;
+}
+
+.imgRight {
+    filter: invert(47%) sepia(68%) saturate(5607%) hue-rotate(336deg) brightness(104%) contrast(111%);
+    height: 400px;
+    width: 400px;
+}
+
+h1{
+    z-index: 2;
+}
+h6{
+    z-index: 2;
+    font-weight: 200;
+}
+
+.imgLeft {
+    filter: invert(47%) sepia(68%) saturate(5607%) hue-rotate(336deg) brightness(104%) contrast(111%);
+    position: absolute;
+    height: 1200px;
+    padding-top: 50px;
 }
