@@ -1,16 +1,24 @@
+import {createHome} from "./home.js";
+
 function createHeader() {
     const content = document.getElementById('content');
     const header = document.createElement("header");
+    const headerLeft = document.createElement('div');
+    const headerRight = document.createElement('div');
     const homeBtn = document.createElement('button');
     const menuBtn = document.createElement('button');
     const contactBtn = document.createElement('button');
-    homeBtn.textContent = "HOME";
-    menuBtn.textContent = "MENU";
-    contactBtn.textContent = "CONTACT";
+    headerLeft.classList.add('headerLeft');
+    headerRight.classList.add('headerRight');
+    homeBtn.textContent = "Home";
+    menuBtn.textContent = "Menu";
+    contactBtn.textContent = "Contact";
     content.appendChild(header);
-    header.appendChild(homeBtn);
-    header.appendChild(menuBtn);
-    header.appendChild(contactBtn);
+    header.appendChild(headerLeft);
+    header.appendChild(headerRight);
+    headerRight.appendChild(homeBtn);
+    headerRight.appendChild(menuBtn);
+    headerRight.appendChild(contactBtn);
 }
 
 function createMain() {
@@ -20,6 +28,7 @@ function createMain() {
     mainContent.classList.add('mainContent')
     content.appendChild(main)
     main.appendChild(mainContent);
+    createHome();
 }
 
 

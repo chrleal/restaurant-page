@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHome\": () => (/* binding */ createHome)\n/* harmony export */ });\nfunction createHome() {\n    const mainContent = document.querySelector('.mainContent');\n    const mainLeft = document.createElement('div');\n    const mainRight = document.createElement('div');\n    mainLeft.classList.add('mainLeft');\n    mainRight.classList.add('mainRight');\n    mainContent.appendChild(mainLeft);\n    mainContent.appendChild(mainRight);\n\n    const title = document.createElement('h1');\n    const subtitle = document.createElement('h6');\n    const imgRight = document.createElement('img');\n    const imgLeft = document.createElement('img');\n    imgRight.classList.add('imgRight');\n    imgLeft.classList.add('imgLeft');\n    title.textContent = 'GUERILLA!';\n    subtitle.textContent = 'THE REVOLUTIONARY FOOD'\n    imgRight.src = \"images/star.svg\";\n    imgLeft.src = \"images/che.svg\";\n    mainLeft.appendChild(title);\n    mainLeft.appendChild(subtitle);\n    mainLeft.appendChild(imgLeft);\n    mainRight.appendChild(imgRight);\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader),\n/* harmony export */   \"createMain\": () => (/* binding */ createMain)\n/* harmony export */ });\nfunction createHeader() {\n    const content = document.getElementById('content');\n    const header = document.createElement(\"header\");\n    const homeBtn = document.createElement('button');\n    const menuBtn = document.createElement('button');\n    const contactBtn = document.createElement('button');\n    homeBtn.textContent = \"HOME\";\n    menuBtn.textContent = \"MENU\";\n    contactBtn.textContent = \"CONTACT\";\n    content.appendChild(header);\n    header.appendChild(homeBtn);\n    header.appendChild(menuBtn);\n    header.appendChild(contactBtn);\n}\n\nfunction createMain() {\n    const content = document.getElementById('content');\n    const main = document.createElement('main');\n    const mainContent = document.createElement('div')\n    mainContent.classList.add('mainContent')\n    content.appendChild(main)\n    main.appendChild(mainContent);\n}\n\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createHeader\": () => (/* binding */ createHeader),\n/* harmony export */   \"createMain\": () => (/* binding */ createMain)\n/* harmony export */ });\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\nfunction createHeader() {\n    const content = document.getElementById('content');\n    const header = document.createElement(\"header\");\n    const headerLeft = document.createElement('div');\n    const headerRight = document.createElement('div');\n    const homeBtn = document.createElement('button');\n    const menuBtn = document.createElement('button');\n    const contactBtn = document.createElement('button');\n    headerLeft.classList.add('headerLeft');\n    headerRight.classList.add('headerRight');\n    homeBtn.textContent = \"Home\";\n    menuBtn.textContent = \"Menu\";\n    contactBtn.textContent = \"Contact\";\n    content.appendChild(header);\n    header.appendChild(headerLeft);\n    header.appendChild(headerRight);\n    headerRight.appendChild(homeBtn);\n    headerRight.appendChild(menuBtn);\n    headerRight.appendChild(contactBtn);\n}\n\nfunction createMain() {\n    const content = document.getElementById('content');\n    const main = document.createElement('main');\n    const mainContent = document.createElement('div')\n    mainContent.classList.add('mainContent')\n    content.appendChild(main)\n    main.appendChild(mainContent);\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_0__.createHome)();\n}\n\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/page-load.js?");
 
 /***/ })
 
