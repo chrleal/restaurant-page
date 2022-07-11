@@ -11,16 +11,24 @@ function createHome() {
     const subtitle = document.createElement('h6');
     const imgRight = document.createElement('img');
     const imgLeft = document.createElement('img');
+    const quote = document.createElement('div');
+    const quote2 = document.createElement('div');
+    quote.classList.add('quote');
+    quote2.classList.add('name');
+    quote.textContent = '"Hasta la victoria siempre"'
+    quote2.textContent = "—Ernesto Che Guevara"
     imgRight.classList.add('imgRight');
     imgLeft.classList.add('imgLeft');
     title.textContent = 'GUERILLA!';
-    subtitle.textContent = 'THE REVOLUTIONARY FOOD'
-    imgRight.src = "images/star.svg";
-    imgLeft.src = "images/che.svg";
+    subtitle.textContent = 'REVOLUTIONARY FOOD'
+    imgRight.src = "images/che.svg";
+    imgLeft.src = "images/star.svg";
     mainLeft.appendChild(title);
     mainLeft.appendChild(subtitle);
     mainLeft.appendChild(imgLeft);
     mainRight.appendChild(imgRight);
+    mainRight.appendChild(quote);
+    mainRight.appendChild(quote2);
 }
 
 export {createHome};

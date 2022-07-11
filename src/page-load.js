@@ -10,9 +10,9 @@ function createHeader() {
     const contactBtn = document.createElement('button');
     headerLeft.classList.add('headerLeft');
     headerRight.classList.add('headerRight');
-    homeBtn.textContent = "Home";
-    menuBtn.textContent = "Menu";
-    contactBtn.textContent = "Contact";
+    homeBtn.textContent = "HOME";
+    menuBtn.textContent = "MENU";
+    contactBtn.textContent = "CONTACT";
     content.appendChild(header);
     header.appendChild(headerLeft);
     header.appendChild(headerRight);
