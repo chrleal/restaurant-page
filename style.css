@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -36,13 +38,13 @@ button {
     flex: 1;
     background-color:transparent;
     border: none;
-    font-size: 26px;
+    font-size: 20px;
     cursor:pointer;
     color: #fffff2;
     max-width: 381px;
     padding: 5px 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -60,7 +62,7 @@ button:hover {
 }
 
 .mainLeft {
-    height: calc(100vh - 42px);
+    height: calc(100vh - 35px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,24 +71,29 @@ button:hover {
     background-color:#435244;
     border-right: 1px solid black;
     border-top: none;
-    font-size: 50px;
-    padding-bottom: 41px;
+    font-size: 56px;
+    /* padding-bottom: 41px; */
+    overflow: hidden;
 }
 
 .mainRight {
-    height: calc(100vh - 42px);
+    height: calc(100vh - 35px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 1;
     background-color: #435244;
-    padding-bottom: 41px;
+    /* padding-bottom: 41px; */
+    overflow: hidden;
 }
 
 .imgRight {
     filter: invert(47%) sepia(68%) saturate(5607%) hue-rotate(336deg) brightness(104%) contrast(111%);
-    height: 400px;
-    width: 400px;
+    height: 950px;
+    width: 950px;
+    /* padding-top: 35px; */
+    max-width: 100%;
 }
 
 h1{
@@ -95,11 +102,38 @@ h1{
 h6{
     z-index: 2;
     font-weight: 200;
+    position: relative;
+    bottom: 20px;
 }
 
 .imgLeft {
     filter: invert(47%) sepia(68%) saturate(5607%) hue-rotate(336deg) brightness(104%) contrast(111%);
-    position: absolute;
-    height: 1200px;
-    padding-top: 50px;
+    position: relative;
+    height: 32px;
+    bottom: 183px;
+    left: 28px;
+    /* transform: scale(1.2); */
+    /* padding-bottom: 50px; */
+    /* max-height: 100%; */
+    /* max-width: 380px; */
+    /* object-fit: scale-down; */
+}
+
+.quote{
+    position: relative;
+    bottom: 150px;
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.name{
+    font-style: normal;
+    position: relative;
+    bottom: 150px;
+    left: 90px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
