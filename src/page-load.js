@@ -1,5 +1,3 @@
-import {createHome} from "./home.js";
-
 function createHeader() {
     const content = document.getElementById('content');
     const header = document.createElement("header");
@@ -13,6 +11,9 @@ function createHeader() {
     homeBtn.textContent = "HOME";
     menuBtn.textContent = "MENU";
     contactBtn.textContent = "CONTACT";
+    homeBtn.setAttribute('class', 'home');
+    menuBtn.setAttribute('class', 'menu');
+    contactBtn.setAttribute('class', 'contact');
     content.appendChild(header);
     header.appendChild(headerLeft);
     header.appendChild(headerRight);
@@ -28,9 +29,23 @@ function createMain() {
     mainContent.classList.add('mainContent')
     content.appendChild(main)
     main.appendChild(mainContent);
-    createHome();
+    const mainLeft = document.createElement('div');
+    const mainRight = document.createElement('div');
+    mainLeft.classList.add('mainLeft');
+    mainRight.classList.add('mainRight');
+    mainContent.appendChild(mainLeft);
+    mainContent.appendChild(mainRight);
+    const title = document.createElement('h1');
+    const subtitle = document.createElement('h6');
+    const imgLeft = document.createElement('img');
+    imgLeft.classList.add('imgLeft');
+    imgLeft.src = "images/star.svg";
+    title.textContent = 'GUERRILLA!';
+    subtitle.textContent = 'COCINA CUBANA';
+    mainLeft.appendChild(title);
+    mainLeft.appendChild(subtitle);
+    mainLeft.appendChild(imgLeft);
 }
 
 
-
-export { createHeader, createMain };
+export { createHeader, createMain};
