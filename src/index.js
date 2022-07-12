@@ -1,6 +1,7 @@
 import { createHeader, createMain} from "./page-load";
 import {createHome} from "./home.js";
 import {createMenu} from "./menu.js";
+import {createContact} from "./contact.js";
 createHeader();
 createMain();
 
@@ -12,6 +13,6 @@ const contactBtn = document.querySelector('.contact');
     createHome();
     homeBtn.addEventListener('click', createHome);
     menuBtn.addEventListener('click', createMenu);
-    // contactBtn.addEventListener('click', createContact);
+    contactBtn.addEventListener('click', createContact);
 })();
 

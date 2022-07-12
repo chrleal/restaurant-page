@@ -23,7 +23,7 @@ function createMenu(){
         name: 'Chicharrones'}
     ];
 
-    menu.forEach (option => displayMenu(option));
+    menu.forEach(option => displayMenu(option));
 
     function displayMenu(option) {
         const cell = document.createElement('div');

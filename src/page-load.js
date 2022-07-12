@@ -8,9 +8,9 @@ function createHeader() {
     const contactBtn = document.createElement('button');
     headerLeft.classList.add('headerLeft');
     headerRight.classList.add('headerRight');
-    homeBtn.textContent = "HOME";
-    menuBtn.textContent = "MENU";
-    contactBtn.textContent = "CONTACT";
+    homeBtn.textContent = "Home";
+    menuBtn.textContent = "Menu";
+    contactBtn.textContent = "Contact";
     homeBtn.setAttribute('class', 'home');
     menuBtn.setAttribute('class', 'menu');
     contactBtn.setAttribute('class', 'contact');
@@ -45,6 +45,22 @@ function createMain() {
     mainLeft.appendChild(title);
     mainLeft.appendChild(subtitle);
     mainLeft.appendChild(imgLeft);
+
+    // const headerRight = document.createElement('div');
+    // const homeBtn = document.createElement('button');
+    // const menuBtn = document.createElement('button');
+    // const contactBtn = document.createElement('button');
+    // headerRight.classList.add('headerRight');
+    // homeBtn.textContent = "Home";
+    // menuBtn.textContent = "Menu";
+    // contactBtn.textContent = "Contact";
+    // homeBtn.setAttribute('class', 'home');
+    // menuBtn.setAttribute('class', 'menu');
+    // contactBtn.setAttribute('class', 'contact');
+    // mainRight.appendChild(headerRight);
+    // headerRight.appendChild(homeBtn);
+    // headerRight.appendChild(menuBtn);
+    // headerRight.appendChild(contactBtn);
 }
 
 
