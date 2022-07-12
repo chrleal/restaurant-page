@@ -2,6 +2,7 @@ import { createHeader, createMain} from "./page-load";
 import {createHome} from "./home.js";
 import {createMenu} from "./menu.js";
 import {createContact} from "./contact.js";
+
 createHeader();
 createMain();
 

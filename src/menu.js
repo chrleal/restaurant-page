@@ -2,12 +2,10 @@ function createMenu(){
     const mainRight = document.querySelector('.mainRight')
     mainRight.innerHTML = '';
 
-    // container
     const containerMenu= document.createElement('div')
     containerMenu.classList.add('containerMenu')
     mainRight.appendChild(containerMenu);
 
-    //menu
     const menu = [
         {img: 'images/lechonasado.jpg',
         name: 'Lechon Asado'},
