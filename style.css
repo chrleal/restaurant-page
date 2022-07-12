@@ -15,7 +15,7 @@ body{
     flex-direction: column;
 }
 
-/*  */
+/* -----Header----- */
 
 header {
     display: flex;
@@ -36,9 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     flex: 1;
-    /* border-top: 1px solid black; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    /* border-left: 1px solid black; */
 }
 
 button {
@@ -49,19 +47,17 @@ button {
     cursor:pointer;
     color: #fffff2;
     max-width: 381px;
-    /* margin: 5px 5px 0 5px; */
     padding: 5px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    /* border-radius: 10px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25); */
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background-color:#FF3C40;
-    /* box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25); */
 }
+
+/* -----Main----- */
 
 .mainContent {
     display: flex;
@@ -79,7 +75,6 @@ button:hover {
     justify-content: center;
     flex: 1.5;
     background-color:#435244;
-    /* border-right: 1px solid black; */
     border-top: none;
     font-size: 56px;
     overflow: hidden;
@@ -96,7 +91,6 @@ button:hover {
     background-color: #435244;
     overflow: hidden;
     position: relative;
-    /* box-shadow: -5px 3px 8px 0px rgba(0,0,0,0.57); */
     z-index: 2;
 }
 
@@ -104,7 +98,6 @@ button:hover {
     filter: invert(47%) sepia(68%) saturate(5607%) hue-rotate(336deg) brightness(104%) contrast(111%);
     height: 950px;
     width: 950px;
-    /* padding-top: 35px; */
     max-width: 100%;
 }
 
@@ -124,11 +117,6 @@ h6{
     height: 32px;
     bottom: 183px;
     left: 68px;
-    /* transform: scale(1.2); */
-    /* padding-bottom: 50px; */
-    /* max-height: 100%; */
-    /* max-width: 380px; */
-    /* object-fit: scale-down; */
 }
 
 .quote{
@@ -150,7 +138,7 @@ h6{
     font-style: italic;
 }
 
-/* Menu */
+/* -----Menu----- */
 
 .containerMenu {
     display: grid;
@@ -193,6 +181,8 @@ h6{
     color: #fffff2;
 }
 
+/* -----Contact----- */
+
 .contactContainer {
     display: flex;
     flex-direction: column;
@@ -224,11 +214,8 @@ h6{
     font-weight: 200;
 }
 
+/* -----Scrollbar----- */
 
-
-
-
-/* scrollbar */
 ::-webkit-scrollbar {
     width: 5px;
   }
